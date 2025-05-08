@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <form action="registro_cosplay.com" method="post">
+  <input type="text" name="nombre" placeholder="Nombre completo">
+  <input type="email" name="correo" placeholder="Correo electrónico">
+  <select name="personaje">
+    <option value="">Elige tu personaje</option>
+    <option value="batman">Batman</option>
+    <option value="spiderman">Spiderman</option>
+    <option value="wonder_woman">Wonder Woman</option>
+  </select>
+  <input type="submit" value="Registrarse"><br>
+  <input type="color">
+  <textarea rows="4" cols="50" placeholder="Escribe tu comentario aquí..." required></textarea>
+  <form action="buscar_videojuego.php" method="post">
+    <input list="videojuegos" name="nombre_videojuego" placeholder="Nombre del videojuego">
+    <datalist id="videojuegos">
+      <option value="The Legend of Zelda: Breath of the Wild">
+      <option value="Super Mario Odyssey">
+      <option value="Red Dead Redemption 2">
+      <option value="Horizon Zero Dawn">
+    </datalist>
+    <input type="submit" value="Buscar">
+  </form>
+  <input type="text" name="ciudad"
+placeholder="Ciudad" maxlength="50"
+required /> <br>
+<form action="subir_foto_cosplay.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="foto_cosplay" accept="image/*">
+    <input type="submit" value="Subir foto">
+  </form>
+  <p contenteditable="true">Nombre: Juan Pérez</p>
+
+
+</body>
+</html>

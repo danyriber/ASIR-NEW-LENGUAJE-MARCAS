@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de inscripción</title>
+
+</head>
+<body>
+    <h1>Formulario de Inscripción</h1>
+    <form>
+        <label>Nombre: <input type="text" name="nombre" required></label><br>
+        <label>Apellidos: <input type="text" name="apellidos" required></label><br>
+        <label>Email: <input type="text" name="email" required></label><br>
+        <label>Edad: <input type="number" name="edad" min="16" required></label><br>
+        <label>Curso</label>
+            <select name="curso" >
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JS</option>
+
+            </select>
+
+        <label><br>
+
+            <label><input type="radio" name="turno" value="mañana">Mañana</label>
+            <label><input type="radio" name="turno" value="tarde">Tarde</label>
+            <label><input type="radio" name="turno" value="noche">Noche</label><br>
+            <label> <input type="checkbox" name="condiciones" value="Acepto las condiciones">Acepto las condiciones</label><br>
+            <input type="submit" value="Enviar">
+
+    </form>
+    
+</body>
+</html>
